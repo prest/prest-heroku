@@ -1,6 +1,6 @@
 {
   "name": "pREST",
-  "description": "RESTful API Server from PostgreSQK DataBase.",
+  "description": "RESTful API Server from PostgreSQL DataBase.",
   "logo": "https://postgres.rest/logo.png",
   "keywords": [
     "database",
