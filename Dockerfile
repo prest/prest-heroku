@@ -1,4 +1,4 @@
-FROM prest/prest:v1
+FROM prest/prest:latest
 
 ADD ./prest.toml ./prest.toml
 
