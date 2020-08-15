@@ -1,2 +1,1 @@
-# heroku
-pREST on Heroku
+# pREST on Heroku
