@@ -1,8 +1,8 @@
 FROM prest/prest:latest
 
-ADD ./prest.toml ./prest.toml
+ADD ./prest.toml /app/prest.toml
 
 # Variables that must pREST expect from heroku
 # - DATABASE_URL
 # - PORT
-CMD prestd
+CMD /app/prestd
