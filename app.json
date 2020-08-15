@@ -1,0 +1,28 @@
+{
+  "name": "pREST",
+  "description": "RESTful API Server from PostgreSQK DataBase.",
+  "logo": "https://postgres.rest/logo.png",
+  "keywords": [
+    "database",
+    "api",
+    "rest",
+    "restful",
+    "heroku",
+    "postgres",
+    "prest"
+  ],
+  "success_url": "/databases",
+  "website": "https://github.com/prest/prest",
+  "repository": "https://github.com/prest/heroku",
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "stack": "container",
+  "addons": [
+    {
+      "plan": "heroku-postgresql:hobby-dev"
+    }
+  ]
+}
