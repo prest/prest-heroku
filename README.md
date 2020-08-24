@@ -2,6 +2,8 @@
 [![GitHub Stars](https://img.shields.io/github/stars/prest/prest.svg?style=social&label=Star)](https://github.com/prest/prest) 
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/prest/prest?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
+_p_**REST** is a fast RESTful server that gives you ⚡  instant, realtime, high-performance on any Postgres application, existing or new.
+
 
 ## Quickstart
 
