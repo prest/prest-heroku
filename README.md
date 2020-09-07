@@ -1,4 +1,4 @@
-# <img align="right" src="https://postgres.rest/logo.png" alt="RESTful API" title="RESTful API"> pREST on Heroku
+# <img align="right" src="https://docs.postgres.rest/logo.png" alt="RESTful API" title="RESTful API"> pREST on Heroku
 [![GitHub Stars](https://img.shields.io/github/stars/prest/prest.svg?style=social&label=Star)](https://github.com/prest/prest) 
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/prest/prest?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
