@@ -1,3 +1,5 @@
-build: 
+build:
   docker:
     web: Dockerfile
+  config:
+    PREST_JWT_DEFAULT: false
