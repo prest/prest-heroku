@@ -5,7 +5,8 @@ FROM alpine:latest
 RUN apk add --no-cache libc6-compat
 
 COPY --from=builder /bin/prestd /bin/prestd
+COPY --from=builder /app/entrypoint.sh /app/entrypoint.sh
 ADD ./prest.toml /app/prest.toml
 WORKDIR /app
 
-CMD ["/bin/prestd"]
+ENTRYPOINT ["sh", "/app/entrypoint.sh"]
