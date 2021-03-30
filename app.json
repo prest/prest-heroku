@@ -1,7 +1,7 @@
 {
   "name": "pREST",
-  "description": "pREST is a fast RESTful server that gives you ⚡  instant, realtime, high-performance on any Postgres application, existing or new.",
-  "logo": "https://postgres.rest/logo.png",
+  "description": "pREST is a fast RESTful server that gives you ⚡ instant, realtime, high-performance on any Postgres application, existing or new.",
+  "logo": "https://docs.postgres.rest/logo.png",
   "keywords": [
     "database",
     "api",

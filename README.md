@@ -2,8 +2,7 @@
 [![GitHub Stars](https://img.shields.io/github/stars/prest/prest.svg?style=social&label=Star)](https://github.com/prest/prest) 
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/prest/prest?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-_p_**REST** is a fast RESTful server that gives you ⚡  instant, realtime, high-performance on any Postgres application, existing or new.
-
+_p_**REST** is a fast RESTful server that gives you ⚡ instant, realtime, high-performance on any Postgres application, existing or new.
 
 ## Quickstart
 
@@ -11,3 +10,5 @@ _p_**REST** is a fast RESTful server that gives you ⚡  instant, realtime, high
 Deploy to Heroku and instantly get a realtime RESTFul API backed by Heroku Postgres:
 
 [![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/prest/prest-heroku)
+
+> in this version of heroku the pREST authentication system is disabled, read more about the configuration [here](https://docs.prestd.com/configurations/)
