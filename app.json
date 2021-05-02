@@ -1,90 +1,72 @@
 {
-  "name": "pREST",
-  "description": "pREST is a fast RESTful server that gives you ⚡ instant, realtime, high-performance on any Postgres application, existing or new.",
-  "logo": "https://docs.postgres.rest/logo.png",
-  "keywords": [
-    "database",
-    "api",
-    "rest",
-    "restful",
-    "heroku",
-    "postgres",
-    "prest"
-  ],
-  "success_url": "/databases",
-  "website": "https://github.com/prest/prest",
-  "repository": "https://github.com/prest/heroku",
-  "formation": {
-    "web": {
-      "quantity": 1
-    }
-  },
-  "stack": "container",
-  "addons": [
-    {
-      "plan": "heroku-postgresql:hobby-dev"
-    }
-  ],
-  "env": {
-    "PREST_DEBUG": {
-      "description": "Activates or deactivates debug mode",
-      "value": "false"
+    "addons": [{
+        "plan": "heroku-postgresql:hobby-dev"
+    }],
+    "description": "pREST is a fast RESTful server that gives you ⚡ instant, realtime, high-performance on any Postgres application, existing or new.",
+    "env": {
+        "PREST_AUTH_ENABLED": {
+            "description": "Activates or deactivates token generation endpoint support",
+            "value": "false"
+        },
+        "PREST_AUTH_ENCRYPT": {
+            "description": "Type of encryption used in password field, support for MD5 and SHA1",
+            "value": "MD5"
+        },
+        "PREST_AUTH_PASSWORD": {
+            "description": "Password field that will be consulted",
+            "value": "password"
+        },
+        "PREST_AUTH_TABLE": {
+            "description": "Table name we will consult (query)",
+            "value": "prest_users"
+        },
+        "PREST_AUTH_TYPE": {
+            "description": "Type that will receive the login, support for body and http basic authentication",
+            "value": "body"
+        },
+        "PREST_AUTH_USERNAME": {
+            "description": "User field that will be consulted - if your software uses email just abstract name username (at pREST code level it was necessary to define an internal standard)",
+            "value": "username"
+        },
+        "PREST_DEBUG": {
+            "description": "Activates or deactivates debug mode",
+            "value": "true"
+        },
+        "PREST_JWT_ALGO": {
+            "description": "JWT sigin algorithm.",
+            "value": "HS256"
+        },
+        "PREST_JWT_DEFAULT": {
+            "description": "Activates or deactivates JSON Web Tokens (JWT) authentication",
+            "value": "false"
+        },
+        "PREST_JWT_KEY": {
+            "description": "JWT authorization key.",
+            "value": ""
+        },
+        "PREST_JWT_WHITELIST": {
+            "description": "Serves to configure which endpoints will not ask for jwt token",
+            "value": "/auth"
+        }
     },
-    "PREST_JWT_DEFAULT": {
-      "description": "Activates or deactivates JSON Web Tokens (JWT) authentication",
-      "value": "true"
+    "formation": {
+        "web": {
+            "quantity": 1
+        }
     },
-    "PREST_JWT_KEY": {
-      "description": "JWT authorization key.",
-      "value": ""
-    },
-    "PREST_JWT_ALGO": {
-      "description": "JWT sigin algorithm.",
-      "value": ""
-    },
-    "PREST_JWT_WHITELIST": {
-      "description": "Serves to configure which endpoints will not ask for jwt token",
-      "value": "/auth"
-    },
-    "PREST_AUTH_ENABLED": {
-      "description": "Activates or deactivates token generation endpoint support",
-      "value": "false"
-    },
-    "PREST_AUTH_TYPE": {
-      "description": "Type that will receive the login, support for body and http basic authentication",
-      "value": "body"
-    },
-    "PREST_AUTH_ENCRYPT": {
-      "description": "Type of encryption used in password field, support for MD5 and SHA1",
-      "value": "MD5"
-    },
-    "PREST_AUTH_TABLE": {
-      "description": "Table name we will consult (query)",
-      "value": "prest_users"
-    },
-    "PREST_AUTH_USERNAME": {
-      "description": "User field that will be consulted - if your software uses email just abstract name username (at pREST code level it was necessary to define an internal standard)",
-      "value": "username"
-    },
-    "PREST_AUTH_PASSWORD": {
-      "description": "Password field that will be consulted",
-      "value": "password"
-    },
-    "PREST_SSL_MODE": {
-      "description": "PostgreSQL SSL mode (see https://www.postgresql.org/docs/current/libpq-ssl.html#LIBPQ-SSL-SSLMODE-STATEMENTS)",
-      "value": "require"
-    },
-    "PREST_SSL_CERT": {
-      "description": "Name of the client SSL certificate (see https://www.postgresql.org/docs/current/libpq-connect.html#LIBPQ-CONNECT-SSLCERT)",
-      "value": ""
-    },
-    "PREST_SSL_KEY": {
-      "description": "Specifies the location for the secret key used for the client certificate (see https://www.postgresql.org/docs/current/libpq-connect.html#LIBPQ-CONNECT-SSLKEY)",
-      "value": ""
-    },
-    "PREST_SSL_ROOTCERT": {
-      "description": "Specifies the name of a file containing SSL certificate authority (CA) certificate(s) (see https://www.postgresql.org/docs/current/libpq-connect.html#LIBPQ-CONNECT-SSLROOTCERT)",
-      "value": ""
-    }
-  }
+    "keywords": [
+        "database",
+        "api",
+        "rest",
+        "restful",
+        "heroku",
+        "postgres",
+        "prest"
+    ],
+    "logo": "https://docs.postgres.rest/logo.png",
+    "name": "pREST",
+    "repository": "https://github.com/prest/heroku",
+    "stack": "container",
+    "success_url": "/databases",
+    "website": "https://github.com/prest/prest"
 }
