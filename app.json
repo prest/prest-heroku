@@ -1,72 +1,74 @@
 {
-    "addons": [{
-        "plan": "heroku-postgresql:hobby-dev"
-    }],
-    "description": "pREST is a fast RESTful server that gives you ⚡ instant, realtime, high-performance on any Postgres application, existing or new.",
-    "env": {
-        "PREST_AUTH_ENABLED": {
-            "description": "Activates or deactivates token generation endpoint support",
-            "value": "false"
-        },
-        "PREST_AUTH_ENCRYPT": {
-            "description": "Type of encryption used in password field, support for MD5 and SHA1",
-            "value": "MD5"
-        },
-        "PREST_AUTH_PASSWORD": {
-            "description": "Password field that will be consulted",
-            "value": "password"
-        },
-        "PREST_AUTH_TABLE": {
-            "description": "Table name we will consult (query)",
-            "value": "prest_users"
-        },
-        "PREST_AUTH_TYPE": {
-            "description": "Type that will receive the login, support for body and http basic authentication",
-            "value": "body"
-        },
-        "PREST_AUTH_USERNAME": {
-            "description": "User field that will be consulted - if your software uses email just abstract name username (at pREST code level it was necessary to define an internal standard)",
-            "value": "username"
-        },
-        "PREST_DEBUG": {
-            "description": "Activates or deactivates debug mode",
-            "value": "true"
-        },
-        "PREST_JWT_ALGO": {
-            "description": "JWT sigin algorithm.",
-            "value": "HS256"
-        },
-        "PREST_JWT_DEFAULT": {
-            "description": "Activates or deactivates JSON Web Tokens (JWT) authentication",
-            "value": "false"
-        },
-        "PREST_JWT_KEY": {
-            "description": "JWT authorization key.",
-            "value": ""
-        },
-        "PREST_JWT_WHITELIST": {
-            "description": "Serves to configure which endpoints will not ask for jwt token",
-            "value": "/auth"
-        }
+  "addons": [
+    {
+      "plan": "heroku-postgresql:hobby-dev"
+    }
+  ],
+  "description": "pREST is a fast RESTful server that gives you ⚡ instant, realtime, high-performance on any Postgres application, existing or new.",
+  "env": {
+    "PREST_AUTH_ENABLED": {
+      "description": "Activates or deactivates token generation endpoint support",
+      "value": "false"
     },
-    "formation": {
-        "web": {
-            "quantity": 1
-        }
+    "PREST_AUTH_ENCRYPT": {
+      "description": "Type of encryption used in password field, support for MD5 and SHA1",
+      "value": "MD5"
     },
-    "keywords": [
-        "database",
-        "api",
-        "rest",
-        "restful",
-        "heroku",
-        "postgres",
-        "prest"
-    ],
-    "logo": "https://docs.postgres.rest/logo.png",
-    "name": "pREST",
-    "repository": "https://github.com/prest/heroku",
-    "stack": "container",
-    "success_url": "/databases",
-    "website": "https://github.com/prest/prest"
+    "PREST_AUTH_PASSWORD": {
+      "description": "Password field that will be consulted",
+      "value": "password"
+    },
+    "PREST_AUTH_TABLE": {
+      "description": "Table name we will consult (query)",
+      "value": "prest_users"
+    },
+    "PREST_AUTH_TYPE": {
+      "description": "Type that will receive the login, support for body and http basic authentication",
+      "value": "body"
+    },
+    "PREST_AUTH_USERNAME": {
+      "description": "User field that will be consulted - if your software uses email just abstract name username (at pREST code level it was necessary to define an internal standard)",
+      "value": "username"
+    },
+    "PREST_DEBUG": {
+      "description": "Activates or deactivates debug mode",
+      "value": "true"
+    },
+    "PREST_JWT_ALGO": {
+      "description": "JWT sigin algorithm.",
+      "value": "HS256"
+    },
+    "PREST_JWT_DEFAULT": {
+      "description": "Activates or deactivates JSON Web Tokens (JWT) authentication",
+      "value": "false"
+    },
+    "PREST_JWT_KEY": {
+      "description": "JWT authorization key.",
+      "value": ""
+    },
+    "PREST_JWT_WHITELIST": {
+      "description": "Serves to configure which endpoints will not ask for jwt token",
+      "value": "/auth"
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "keywords": [
+    "database",
+    "api",
+    "rest",
+    "restful",
+    "heroku",
+    "postgres",
+    "prest"
+  ],
+  "logo": "https://docs.postgres.rest/logo.png",
+  "name": "pREST",
+  "repository": "https://github.com/prest/heroku",
+  "stack": "container",
+  "success_url": "/databases",
+  "website": "https://github.com/prest/prest"
 }
