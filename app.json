@@ -44,7 +44,7 @@
     },
     "PREST_JWT_KEY": {
       "description": "JWT authorization key.",
-      "value": "sssssss"
+      "value": ""
     },
     "PREST_JWT_WHITELIST": {
       "description": "Serves to configure which endpoints will not ask for jwt token",
