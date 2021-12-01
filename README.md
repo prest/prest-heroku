@@ -9,6 +9,6 @@ _p_**REST** is a fast RESTful server that gives you ⚡ instant, realtime, high-
 ### 1. Deploy to Heroku 
 Deploy to Heroku and instantly get a realtime RESTFul API backed by Heroku Postgres:
 
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/prest/prest-heroku)
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/hawyar/prest-heroku)
 
 > in this version of heroku the pREST authentication system is disabled, read more about the configuration [here](https://docs.prestd.com/configurations/)

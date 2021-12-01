@@ -10,5 +10,7 @@ ENV PREST_JWT_DEFAULT=false
 RUN apk add --no-cache libc6-compat
 
 COPY --from=builder /bin/prestd /bin/prestd
+ADD ./prest.toml /app/prest.toml
+WORKDIR /app
 
 CMD ["/bin/prestd"]
