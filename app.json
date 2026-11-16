@@ -1,7 +1,7 @@
 {
   "addons": [
     {
-      "plan": "heroku-postgresql:hobby-dev"
+      "plan": "heroku-postgresql:essential-0"
     }
   ],
   "description": "pREST is a fast RESTful server that gives you ⚡ instant, realtime, high-performance on any Postgres application, existing or new.",
@@ -65,9 +65,9 @@
     "postgres",
     "prest"
   ],
-  "logo": "https://docs.postgres.rest/logo.png",
+  "logo": "https://avatars.githubusercontent.com/u/30427128?v=4",
   "name": "pREST",
-  "repository": "https://github.com/prest/heroku",
+  "repository": "https://github.com/prest/prest-heroku",
   "stack": "container",
   "success_url": "/databases",
   "website": "https://github.com/prest/prest"
